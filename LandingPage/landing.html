@@ -19,12 +19,14 @@
     <title>Web Ejemplo IHC</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="Pie.css" />
+    <link rel="stylesheet" href="menu/menu_toggle.css" />
   </head>
   <body>
     <nav class="topheader">
       <a href="" class="logo">
-        <img width="75" height="40" src="img/batman.png" alt="imglogo" />
+        <img width="75" height="40" src="../img/leon.png" alt="imglogo" />
       </a>
+
       <ul class="Menu-horizontal">
         <li><a href="">Promociones</a></li>
         <li>
@@ -39,7 +41,15 @@
         <li><a href="">Privilegios</a></li>
         <li><a href="">Canales</a></li>
         <li><a href="#contactanos">Contactenos</a></li>
+
+        <!-- Nuevo item móvil para cerrar sesión -->
+        <li class="mobile-logout" style="display: none">
+          <a href="#" id="mobile-logout">Cerrar Sesión</a>
+        </li>
       </ul>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
     </nav>
     <!--seccion PROMOCION-->
     <section class="seccion-promo">
@@ -208,8 +218,8 @@
         <div class="footer-container">
           <!-- Logo y nombre de sitio -->
           <div class="footer-brand">
-            <img src="img/batman.png" alt="Logo" class="footer-logo" />
-            <p>Anderson</p>
+            <img src="../img/leon.png" alt="Logo" class="footer-logo" />
+            <p>Christian</p>
             <small>© 2025 Todos los derechos reservados</small>
           </div>
 
@@ -254,5 +264,6 @@
         </div>
       </footer>
     </section>
+    <script src="menu/menu_toggle.js"></script>
   </body>
 </html>

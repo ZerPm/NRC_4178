@@ -11,7 +11,7 @@ function validarLogin(event) {
   if (passwordInput.toLowerCase() === CLAVE_SECRETA) {
     alert("¡Acceso concedido! Bienvenido.");
     // Redirige a tu página principal
-    window.location.href = "landingpage.html";
+    window.location.href = "../LandingPage/landing.html";
   } else {
     alert("Clave incorrecta. Inténtalo de nuevo.");
     document.getElementById("password").value = "";

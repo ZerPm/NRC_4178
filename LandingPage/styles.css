@@ -1,52 +1,63 @@
+/* ===========================
+   ESTILO GENERAL DEL SITIO
+   =========================== */
+
 body {
-  margin: 0rem;
+  margin: 0;
+  font-family: "Jura", sans-serif;
+  background-color: #f5f3ff;
 }
 
+/* HEADER SUPERIOR */
 .topheader {
-  position: false;
-  background-color: gray;
+  background-color: #4a2fcb;
   width: 100%;
   height: 5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0rem 1.25rem;
-  font-family: "Jura", sans-serif;
+  padding: 0 1.25rem;
+  color: white;
 }
 
+/* MENU SECUNDARIO */
 .Syt {
-  position: relative;
-  background-color: purple;
+  background-color: #6c4ffc;
   width: 100%;
-  height: auto;
+  padding: 0.4rem 1.25rem;
   display: flex;
   align-items: center;
-  justify-self: space-around;
-  padding: 0.313rem 1.25rem;
 }
 
+/* Menú horizontal */
 .Menu-horizontal {
   list-style: none;
   display: flex;
   justify-content: space-around;
   width: 100%;
+  padding: 0;
 }
+
 .Menu-horizontal li a {
   text-decoration: none;
-  padding: 0.938rem 1.25rem;
-  color: blue;
+  padding: 0.8rem 1.2rem;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .Menu-horizontal li a:hover {
-  color: green;
+  color: #f5f3ff;
 }
 
+/* Menú vertical */
 .Menu-Vertical {
   padding: 0;
   position: absolute;
   display: none;
-  width: 12.5;
   list-style: none;
+  background-color: #4a2fcb;
+  border-radius: 0.3rem;
 }
 
 .Menu-horizontal li:hover .Menu-Vertical {
@@ -56,17 +67,19 @@ body {
 .Menu-Vertical li a {
   display: block;
   color: white;
+  padding: 0.7rem 1rem;
 }
 
-.Menu-Vertical li {
-  background-color: black;
+.Menu-Vertical li a:hover {
+  background-color: #3a23b5;
 }
 
-/*SECCION PROMOCION*/
+/* SECCIÓN PROMOCIÓN */
 .seccion-promo {
-  padding: 3.75rem 1.25rem;
-  background-color: white;
+  padding: 3.5rem 1.25rem;
+  background-color: #ffffff;
 }
+
 .div-gral-promo {
   display: flex;
   justify-content: space-between;
@@ -75,80 +88,68 @@ body {
   margin: 0 auto;
   gap: 2.5rem;
 }
-.div-promo-texto {
-  flex: 1;
-}
+
 .div-promo-texto h2 {
-  color: blue;
-  margin-bottom: 0.938rem;
+  color: #4a2fcb;
+  margin-bottom: 1rem;
   font-family: "Schoolbell", cursive;
 }
+
 .div-promo-texto p {
-  color: black;
-  line-height: 1.6;
+  color: #555;
   font-family: "Schoolbell", cursive;
+  line-height: 1.6;
 }
-/*boton*/
+
 .div-promo-texto button {
   margin-top: 1.25rem;
-  padding: 0.625rem 1.25rem;
-  background-color: orange;
-  color: black;
+  padding: 0.7rem 1.3rem;
+  background-color: #6c4ffc;
+  color: white;
   border: none;
-  border-radius: 0.313rem;
+  border-radius: 0.3rem;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.div-promo-img {
-  flex: 1;
+.div-promo-texto button:hover {
+  background-color: #4a2fcb;
 }
+
+/* Imagen promo */
 .div-promo-img img {
   width: 100%;
-  max-width: 31.25rem;
-}
-/*SECCION PRiVILEGIOS*/
-.seccion-privi {
-  padding: 3.75rem 1.25rem;
-  background-color: white;
+  max-width: 31rem;
 }
 
-.div-gral-privi {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 75rem;
-  margin: 0 auto;
-  gap: 2.5rem;
+/* SECCIÓN PRIVILEGIOS */
+.seccion-privi {
+  padding: 3.5rem 1.25rem;
+  background-color: #ffffff;
 }
-.div-privi-texto {
-  flex: 1;
-}
+
 .div-privi-texto h2 {
-  color: blue;
-  margin-bottom: 0.938rem;
+  color: #4a2fcb;
+  margin-bottom: 1rem;
   font-family: "Schoolbell", cursive;
 }
+
 .div-privi-texto p {
-  color: black;
+  color: #555;
   line-height: 1.6;
   font-family: "Schoolbell", cursive;
 }
-.div-privi-video {
-  flex: 1;
-}
 
+/* VIDEO */
 .div-privi-video iframe {
   width: 100%;
-  max-width: 100%;
-  max-width: 31.25rem;
+  max-width: 31rem;
 }
 
-/*Formulario*/
+/* FORMULARIO GENERAL */
 .seccion-formulario {
-  background-color: #f4f0f8;
+  background-color: #f5f3ff;
   padding: 2.5rem;
-  border: none;
-  border-radius: 0.625rem;
   display: flex;
   justify-content: center;
   margin-bottom: 2.5rem;
@@ -156,32 +157,26 @@ body {
 
 .div-contenedor-formulario {
   background-color: #ffffff;
-  padding: 1.875rem;
-  border: 0.063rem solid #dcdcdc;
-  border-radius: 0.625rem;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 0.6rem;
   width: 100%;
   max-width: 31.25rem;
-  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.07);
 }
 
 .div-contenedor-formulario h2 {
-  color: #333;
+  color: #4a2fcb;
 }
+
 .div-contenedor-formulario p {
   color: #555;
 }
 
-.campo {
-  background-color: transparent;
-  padding: 0;
-  margin-bottom: 1.25rem;
-  border: none;
-  border-radius: 0.313rem;
-}
-
+/* Inputs */
 .Formulario label {
   display: block;
-  color: #4a4a4a;
+  color: #333;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
@@ -190,45 +185,39 @@ body {
 .Formulario select {
   width: 100%;
   padding: 0.75rem;
-  border: 0.063 solid #cccccc;
-  border-radius: 0.313rem;
+  border: 1px solid #ccc;
+  border-radius: 0.3rem;
   box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
 .Formulario input[type="text"]:focus,
 .Formulario select:focus {
-  border-color: #7b68ee;
-  box-shadow: 0 0 0.313rem rgba(123, 104, 238, 0.3);
+  border-color: #6c4ffc;
+  box-shadow: 0 0 0.25rem rgba(108, 79, 252, 0.4);
   outline: none;
 }
 
+/* Checkbox & radio */
 .lista-checkbox,
 .lista-radio {
   list-style: none;
   padding: 0;
-  background-color: transparent;
-  border: none;
-  border-radius: 0;
 }
 
-.lista-checkbox li,
-.lista-radio li {
-  margin-bottom: 0.5rem;
-}
-
+/* Botón */
 .Formulario button {
-  background-color: #7b68ee;
+  background-color: #4a2fcb;
   color: white;
   border: none;
-  border-radius: 0.313rem;
-  padding: 0.75rem 1.5rem;
+  border-radius: 0.3rem;
+  padding: 0.8rem;
   cursor: pointer;
   font-weight: bold;
-  font-size: 1rem;
   width: 100%;
   transition: background-color 0.3s ease;
 }
 
 .Formulario button:hover {
-  background-color: #5a48c0;
+  background-color: #3821a8;
 }
